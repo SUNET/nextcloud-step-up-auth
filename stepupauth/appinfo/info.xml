@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<info xmlns:xsi= "http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="https://apps.nextcloud.com/schema/apps/info.xsd">
+    <!--
+    SPDX-FileCopyrightText: Mikael Nordin <kano@sunet.se>
+    SPDX-License-Identifier: CC0-1.0
+    -->
+    <id>stepupauth</id>
+    <name>Step Up Auth</name>
+    <summary>Step up authentication</summary>
+    <description><![CDATA[Allow a user to add a second factor on demand]]></description>
+    <version>0.0.1</version>
+    <licence>agpl</licence>
+    <author mail="kano@sunet.se" homepage="https://github.com/SUNET/nextcloud-step-up-auth">Mikael Nordin</author>
+    <namespace>StepUpAuth</namespace>
+    <category>security</category>
+    <bugs>https://github.com/SUNET/nextcloud-step-up-auth/issues</bugs>
+    <dependencies>
+        <nextcloud min-version="25" max-version="25"/>
+    </dependencies>
+    <settings>
+    	<personal>OCA\StepUpAuth\Settings\Personal</personal>
+    </settings>
+    <navigations>
+        <navigation>
+            <name>Step Up Auth</name>
+            <route>stepupauth.page.index</route>
+        </navigation>
+    </navigations>
+</info>
